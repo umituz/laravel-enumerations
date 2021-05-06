@@ -1,0 +1,32 @@
+{
+    "name": "umituz/laravel-enumerations",
+    "description": "Many constants for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ümit UZ",
+            "email": "umituz998@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "LaravelEnumeration\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnumeration\\Providers\\LaravelEnumerationServiceProvider"
+            ],
+            "aliases": {
+                "MetaEnumeration": "LaravelEnumeration\\Enumerations\\MetaEnumeration",
+                "FileEnumeration": "LaravelEnumeration\\Enumerations\\FileEnumeration",
+                "TemplateEnumeration": "LaravelEnumeration\\Enumerations\\TemplateEnumeration",
+                "CurrencyEnumeration": "LaravelEnumeration\\Enumerations\\CurrencyEnumeration",
+                "IconEnumeration": "LaravelEnumeration\\Enumerations\\IconEnumeration",
+                "ValidatorEnumeration": "LaravelEnumeration\\Enumerations\\ValidatorEnumeration"
+            }
+        }
+    }
+}
